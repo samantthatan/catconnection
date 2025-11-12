@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donation Buttons</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fffaf6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      gap: 30px;
+    }
+
+    .donate-btn {
+      border: none;
+      border-radius: 9999px;
+      padding: 15px 35px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      color: white;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Normal Cats */
+    .normal-cats {
+      background-color: #F4A261;
+    }
+    .normal-cats:hover {
+      transform: translateY(-4px) scale(1.05);
+      box-shadow: 0 8px 20px rgba(244, 162, 97, 0.4);
+      background-color: #f7b27e;
+    }
+
+    /* Special Needs Cats */
+    .special-cats {
+      background-color: #B497D6;
+    }
+    .special-cats:hover {
+      transform: translateY(-4px) scale(1.05);
+      box-shadow: 0 8px 20px rgba(180, 151, 214, 0.4);
+      background-color: #c6abeb;
+    }
+
+    /* Paw emoji animation */
+    .paw {
+      display: inline-block;
+      transition: transform 0.3s ease;
+    }
+    .donate-btn:hover .paw {
+      transform: rotate(20deg);
+    }
+  </style>
+</head>
+<body>
+
+  <button class="donate-btn normal-cats">
+    <span class="paw">🐾</span> Donate for Normal Cats
+  </button>
+
+  <button class="donate-btn special-cats">
+    <span class="paw">💜</span> Support Special Needs Cats
+  </button>
+
+</body>
+</html>
